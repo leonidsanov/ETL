@@ -1,0 +1,61 @@
+<mxfile host="65bd71144e">
+    <diagram name="Page-1" id="FGDCxbEku5QeIaV1xgQk">
+        <mxGraphModel dx="1007" dy="591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="mKeuSS6kBZH1aA-Y2Pv0-2" value="&lt;div&gt;Задание 2: Предположим что у нас появилось две новых бизнес-задачи.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Во-первых, каждому представителю службы поддержки нужен быстрый доступ к некоторым показателям клиента. Для новой функциональности в приложении требуется информационная панель о клиенте с общим объемом продаж, количеством отправленных билетов (order_items) и количеством обращений в службу поддержки клиентов (tickets).&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Во-вторых, представителям службы поддержки нужна панель управления тиектами со списком тикетов и их соответствующими данными. Это нужно им для выбора тикета по адресу в зависимости от приоритета.&lt;/div&gt;&lt;div&gt;Создайте таблицу customer_statistics которая будет содержать информацию о покупательских привычках каждого клиента.&lt;/div&gt;&lt;div&gt;Сделайте схему таблицы используя app.diagrams.net и поделитесь картинкой в чате.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="24" y="10" width="696" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="mKeuSS6kBZH1aA-Y2Pv0-4" value="customer_statistics_1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="430" width="230" height="146" as="geometry"/>
+                </mxCell>
+                <mxCell id="mKeuSS6kBZH1aA-Y2Pv0-5" value="user_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" parent="mKeuSS6kBZH1aA-Y2Pv0-4" vertex="1">
+                    <mxGeometry y="26" width="230" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="mKeuSS6kBZH1aA-Y2Pv0-6" value="orders_count" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" parent="mKeuSS6kBZH1aA-Y2Pv0-4" vertex="1">
+                    <mxGeometry y="56" width="230" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="mKeuSS6kBZH1aA-Y2Pv0-7" value="order_total_sum" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" parent="mKeuSS6kBZH1aA-Y2Pv0-4" vertex="1">
+                    <mxGeometry y="86" width="230" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="mKeuSS6kBZH1aA-Y2Pv0-14" value="tickets_count" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" parent="mKeuSS6kBZH1aA-Y2Pv0-4" vertex="1">
+                    <mxGeometry y="116" width="230" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="mKeuSS6kBZH1aA-Y2Pv0-8" value="user" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="230" width="160" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="mKeuSS6kBZH1aA-Y2Pv0-9" value="id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" parent="mKeuSS6kBZH1aA-Y2Pv0-8" vertex="1">
+                    <mxGeometry y="26" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="mKeuSS6kBZH1aA-Y2Pv0-13" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;" parent="1" source="mKeuSS6kBZH1aA-Y2Pv0-9" target="mKeuSS6kBZH1aA-Y2Pv0-5" edge="1">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="540" y="400" as="sourcePoint"/>
+                        <mxPoint x="640" y="300" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="mKeuSS6kBZH1aA-Y2Pv0-21" value="customer_statistics_2" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="510" y="430" width="230" height="206" as="geometry"/>
+                </mxCell>
+                <mxCell id="mKeuSS6kBZH1aA-Y2Pv0-22" value="ticket_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" parent="mKeuSS6kBZH1aA-Y2Pv0-21" vertex="1">
+                    <mxGeometry y="26" width="230" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="mKeuSS6kBZH1aA-Y2Pv0-23" value="phone_number" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" parent="mKeuSS6kBZH1aA-Y2Pv0-21" vertex="1">
+                    <mxGeometry y="56" width="230" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="mKeuSS6kBZH1aA-Y2Pv0-24" value="ticket_priority" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" parent="mKeuSS6kBZH1aA-Y2Pv0-21" vertex="1">
+                    <mxGeometry y="86" width="230" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="mKeuSS6kBZH1aA-Y2Pv0-25" value="customer_first_name" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" parent="mKeuSS6kBZH1aA-Y2Pv0-21" vertex="1">
+                    <mxGeometry y="116" width="230" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="mKeuSS6kBZH1aA-Y2Pv0-26" value="customer_last_name" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" parent="mKeuSS6kBZH1aA-Y2Pv0-21" vertex="1">
+                    <mxGeometry y="146" width="230" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="mKeuSS6kBZH1aA-Y2Pv0-27" value="user_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" parent="mKeuSS6kBZH1aA-Y2Pv0-21" vertex="1">
+                    <mxGeometry y="176" width="230" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
